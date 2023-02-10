@@ -48,5 +48,17 @@ public class Variables {
 
         int modulus = 26 % 7;
         System.out.println("The remainder is " + modulus);
+
+        boolean iAmYoungerThan30 = false;
+
+        char myFirstNameStartsWith = 'H';
+
+        int[] myArray = {1,2,3,4,5};
+        System.out.println(myArray[0]);
+        myArray[2] = 18;
+        System.out.println(myArray[2]);
+
+        char[] myName = {'H','a','m','z','a','h'};
+        System.out.println(myName);
     }
 }
