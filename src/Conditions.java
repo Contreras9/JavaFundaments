@@ -26,5 +26,12 @@ public class Conditions {
                 System.out.println("You didn't do anything special!");
                 break;
         }
+
+        testScore = 90;
+
+        // If score > 50 and score is divisible by 10.
+        if (testScore > 50 && testScore % 10 == 0) {
+            System.out.println("You passed with a score ending with a zero!");
+        }
     }
 }
