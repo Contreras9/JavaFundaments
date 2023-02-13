@@ -53,5 +53,20 @@ public class Strings {
         boolean evenLength = surname.length() % 2 == 0;
         System.out.println(surname);
         System.out.println(evenLength);
+
+        System.out.println(myName + " " + surname + " " + evenLength + " " + spacePosition);
+
+        // String greeting = "Good morning <<surname>>, today is <<nextDay>>";
+        String greeting = "Good morning " + surname + ", today is " + nextDay + ".";
+        String greeting2 = String.format("Good morning %s, today is %s.", surname, nextDay);
+        System.out.println(greeting);
+        System.out.println(greeting2);
+
+        String colors = "blue, red, green, orange, purple";
+        String[] colorsArray = colors.split(", ");
+
+        for (String color : colorsArray) {
+            System.out.println(color);
+        }
     }
 }
