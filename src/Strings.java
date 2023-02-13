@@ -18,5 +18,19 @@ public class Strings {
         System.out.println(phrase.substring(16));
         System.out.println(phrase.substring(16, 21));
         System.out.println(phrase.replace("light", "heavy"));
+
+        myName = "Hamzah Contreras";
+        String yourName = "Hamzah Santos";
+
+        String myFirstName = myName.substring(0, 7);
+        String yourFirstName= yourName.substring(0, 7);
+
+        System.out.println(myFirstName);
+        System.out.println(yourFirstName);
+
+        // boolean weHaveTheSameFirstName = myFirstName == yourFirstName;
+        boolean weHaveTheSameFirstName = myFirstName.equals(yourFirstName);
+
+        System.out.println(weHaveTheSameFirstName);
     }
 }
