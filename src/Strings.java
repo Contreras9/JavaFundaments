@@ -32,5 +32,26 @@ public class Strings {
         boolean weHaveTheSameFirstName = myFirstName.equals(yourFirstName);
 
         System.out.println(weHaveTheSameFirstName);
+
+        String firstDay = "Sunday";
+
+        String lastDay;
+
+        if (firstDay.equals("Sunday")) {
+            lastDay = "Saturday";
+        }
+        else {
+            lastDay = "Sunday";
+        }
+
+        String nextDay = firstDay.equals("Sunday") ? "Monday" : "Tuesday";
+
+        String person = "Sandra Burnside";
+        int spacePosition = person.indexOf(" ");
+        String surname = person.substring(spacePosition + 1, person.length());
+        // boolean evenLength = surname.length() % 2 == 0 ? true : false;
+        boolean evenLength = surname.length() % 2 == 0;
+        System.out.println(surname);
+        System.out.println(evenLength);
     }
 }
