@@ -1,6 +1,5 @@
 public class NameManager {
-
-    String myName = "Hamzah Contreras";
+    private String myName = "Yarid Contreras";
 
     public String getFirstName() {
         String[] names = myName.split(" ");
@@ -9,6 +8,11 @@ public class NameManager {
 
     public String getSurname() {
         String[] names = myName.split(" ");
-        return names[names.length - 1];
+        doSomething();
+        return names[names.length -1];
+    }
+
+    public static void doSomething() {
+        System.out.println("I'm doing something.");
     }
 }

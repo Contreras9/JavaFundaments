@@ -11,6 +11,17 @@ public class Methods {
         System.out.println("The result was " + result + ".");
 
         double total = addThreeNumbers(2.0, 1.7, result);
+
+        NameManager nameManager = new NameManager();
+        NameManager nameManager2 = new NameManager();
+
+        System.out.println(nameManager.getFirstName());
+        System.out.println(nameManager.getSurname());
+
+        NameManager.doSomething();
+        nameManager.doSomething();
+        // System.out.println(nameManager.myName);
+
     }
 
     public static double addThreeNumbers(double value1, double value2, double value3) {
