@@ -17,5 +17,22 @@ public class ArraysOfObjects {
         }
 
         books[5] = myBook;
+
+        books[8] = new Book("Of mice and men", "John Steinbeck", 16.50);
+        books[7] = new Book("Pride and Prejudice", "Jane Austen", 19.99);
+
+        for (int i = 0; i < books.length; i++) {
+            if (books[i] != null) {
+                System.out.println(books[i].getTitle());
+            }
+        }
+
+        for (Book book : books) {
+            if (book != null) {
+                System.out.println(book.getTitle());
+            }
+        }
+
+
     }
 }
