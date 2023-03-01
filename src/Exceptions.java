@@ -13,12 +13,15 @@ public class Exceptions {
 //        dividing(4);
 //        dividing(0);
 
-        LocalDate today = null;
-        if (today != null) {
-            System.out.println(today.getMonth());
-        }
+//        LocalDate today = null;
+//        if (today != null) {
+//            System.out.println(today.getMonth());
+//        }
+//
+//        String hello = "hello";
+//        Double value = Double.valueOf(hello);
 
-        String hello = "hello";
-        Double value = Double.valueOf(hello);
+        User user1 = new User("Matt", 21);
+        User user2 = new User("Sally", 43);
     }
 }
